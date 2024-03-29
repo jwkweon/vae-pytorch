@@ -1,5 +1,6 @@
 from typing import List
 
+import numpy as np
 import torch
 import yaml
 from einops import rearrange
@@ -21,8 +22,8 @@ def torch2np_clip(tensor):
 def viz_ori_and_recon(x, x_hat, args, idx):
     from matplotlib import pyplot as plt
 
-    x = torch2np(x)
-    x_hat = torch2np(x_hat)
+    x = torch2np_clip(x)
+    x_hat = torch2np_clip(x_hat)
 
     fig, axs = plt.subplots(5, 10, figsize=(20, 10))
 

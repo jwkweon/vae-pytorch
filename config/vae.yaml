@@ -5,7 +5,7 @@ optimizer: adam
 learning_rate: !!float 1e-4
 batch_size: !!int 256
 epochs: !!int 30
-train_iter: !!int 30000
+train_iter: !!int 1000
 
 log_iter: !!int 100
 log_fig_iter: !!int 500

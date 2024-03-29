@@ -1,3 +1,17 @@
+# Simple test code
+*.ipynb
+
+# Datasets
+datasets/
+
+# Output & Checkpoint files
+outputs/
+log/
+checkpoints/
+wandb/
+
+.DS_Store
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

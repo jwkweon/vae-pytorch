@@ -27,9 +27,9 @@ choose a dataset
 
 ### Implementation lists
 
-[x] [VAE](https://arxiv.org/abs/1312.6114)
+- [x] [VAE](https://arxiv.org/abs/1312.6114)
 
 ### Todo
 
-[ ] HVAE
-[ ] MHVAE
+- [ ] HVAE
+- [ ] MHVAE

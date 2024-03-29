@@ -12,4 +12,5 @@ log_fig_iter: !!int 500
 log_dir: ./log
 
 save_fig: !!bool true
-save_dir: ./ckpts
+save_dir: ./outputs
+checkpoint_dir: ./ckpts

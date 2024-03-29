@@ -1,4 +1,5 @@
 import argparse
+import os
 import os.path as osp
 
 import torch
@@ -40,6 +41,12 @@ if __name__ == "__main__":
     elif args.dataset == "celeba":
         args.batch_size = 64
         args.hidden_dims = [64 * 64 * 3, 1024, 512, 256, 10]
+
+    if not osp.exists(args.save_dir):
+        os.makedirs(args.save_dir)
+
+    if not osp.exists(args.checkpoint_dir):
+        os.makedirs(args.checkpoint_dir)
 
     train_loader, test_loader = Dataset_loader(args).load_data()
     model = VAE(args.hidden_dims).to(args.device)
